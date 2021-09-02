@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mi Portafolio</title>
+    <link rel="icon" type="image/png" href="images/veronica.jpeg">
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <header>
+      <img class="header-img" src="images/veronica.jpeg" alt="Imagen de veronica"> </img>
+      <h1 class="header">VERONICA MARILYN QUIJIJE LOPEZ</h1>
+      <h2 class="subtitle">Curso 4<sup>to</sup> "C"</h2>
+
+        <nav>
+          <ul class="navigation">
+            <li class="nav-item"><a href="#acerca">Acerca de</a> </li>
+            <li class="nav-item"> <a href="#proyecto">Mis Proyectos</a> </li>
+            <li class="nav-item"> <a href="#contacto">Contacto</a> </li>
+          </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section>
+      <h2 class="header" id="acerca">Acerca de</h2>
+      <p class="intro">
+       <br>Si puedes soñarlo, puedes hacerlo” ¡Hola! Mi Nombre es Verónica Quijije López 👋 Nacida En Manta-Manabí-Ecuador el 28 de marzo de 1999. Estudio en la Universidad "Laica Eloy Alfaro de Manabí”, en la Facultad de Ciencias Informáticas Carrera de "Tecnología de la Información" Actualmente estoy cruzando el CUARTO SEMESTRE. En mis tiempos libre la paso con mis amigos y familia, me gusta las flores, leer, cantar, explorar en internet, jugar videos juegos Tambien Hago deportes como el Basquet. Aquí pueden observar algunos de mis actividades que mas recientes<br>
+      
+
+      <ul class="social-media">
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter de veronica"/>
+            <p class="social-link-text">Twitter</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com" target="_blank">
+            <img src="images/github-logo.png" alt="Github de Verónica"/>
+            <p class="social-link-text">Github</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="images/linkedin.png" alt="Linkedin veronica"/>
+            <p class="social-link-text">Linkedin</p>
+          </a>
+        </li>
+      </ul>
+    </p>
+  </section>
+
+    <section>
+      <h2 class="header" id="proyec">Mis Proyectos</h2>
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="Boton para ir hacia atrás"></button>
+        <div class="window">
+          <ul class="project-container">
+
+            <li class="project1-container"><button class="project1 project">
+              <img src="images/foto.jfif" class="project-img" alt="flor"></button>
+            </li>
+
+            
+            <li class="project3-container"><button class="project3 project">
+              <img src="images/foto2.jfif" class="project-img" alt="flor2"></button>
+            </li>
+
+            <li class="project4-container" aria-hidden="true"><button class="project4 project"
+              tabindex="-1"><img src="images/foto3.jfif" class="project-img" alt="flor3"></button>
+            </li>
+
+            <li class="project5-container" aria-hidden="true"><button class="project5 project"
+              tabindex="-1"><img src="images/foto4.jfif" class="project-img" alt="flor4"></button>
+            </li>
+            <li class="project5-container" aria-hidden="true"><button class="project5 project"
+              tabindex="-1"><img src="images/foto5.jfif" class="project-img" alt="flor5"></button>
+            </li>
+
+          </ul>
+        </div>
+        <button class="arrow arrow-right" aria-label="Boton para ir hacia adelante"></button>
+      </div>
+    </section>
+  </main>
+
+
+    <footer class="contact-section">
+      <h2 class="header" id="contad">Contacto</h2>
+      <p class="intro">Puedes  enviarme  un mensaje para usar el formulario que sigue</p>
+      <form class="form-container">
+        <label class="form-label">Nombre</label>
+          <input type="text" aria-label="nombre" id="name"/>
+        <span id="name-error" aria-live="assertive"></span> <br/>
+        <label class="form-label">Correo</label>
+          <input type="text" aria-label="correo"/> <br />
+        <label class="message-input">Mensaje <input type="text" /> <br/>  </label>
+      <button class="send-button">Enviar</button>
+      </form>
+    </footer>
+
+    <div class="notification" aria-live="assertive"></div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="modal-header" tabindex="0">Flores</h2>
+          <img src="images/foto.jfif" "modal-project-image" alt="pantallazo del proyecto"/>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
